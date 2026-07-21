@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-6-brightgreen)
+![Solved](https://img.shields.io/badge/Solved-7-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -22,10 +22,14 @@ Solutions are auto-synced from NeetCode via GitHub Sync and then annotated by ha
 | 4 | Group Anagrams | 🟡 Medium | Arrays & Hashing | 26-slot count tuple as key | O(n·k) | O(n·k) | [link](Data%20Structures%20%26%20Algorithms/anagram-groups/submission-0.py) |
 | 5 | Valid Palindrome | 🟢 Easy | Two Pointers | Two pointers, skip non-alnum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/is-palindrome/submission-0.py) |
 | 6 | Best Time to Buy/Sell | 🟢 Easy | Sliding Window | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto/submission-0.py) |
+| 7 | Top K Frequent Elements | 🟡 Medium | Arrays & Hashing | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/bucket-sort/submission-1.py) |
+| 7 | ↳ *same problem, 2nd way* | 🟡 Medium | Heap | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/heap/submission-0.py) |
 
-*🟢 Easy · 5   🟡 Medium · 1   🔴 Hard · 0*
+*🟢 Easy · 5   🟡 Medium · 2   🔴 Hard · 0*
 
-*Solved so far: **6** · Language: **Python** 🐍*
+*Solved so far: **7** (8 solutions across 2 approaches)*
+
+*Language: **Python** 🐍*
 
 ---
 
@@ -34,19 +38,29 @@ Solutions are auto-synced from NeetCode via GitHub Sync and then annotated by ha
 ```
 neetcode-submissions/
 └── Data Structures & Algorithms/
-    └── <problem-id>/
-        └── submission-N.py     ← N = attempt number (0 = first)
+    ├── <problem-id>/
+    │   └── submission-N.py         ← N = attempt number (0 = first)
+    │
+    └── top-k-elements-in-list/     ← solved 2 ways -> one subfolder per method
+        ├── bucket-sort/
+        │   └── submission-1.py     ← ⭐ optimal O(n)
+        └── heap/
+            └── submission-0.py     ← O(n log k)
 ```
 
-Files are grouped by topic folder, then problem slug. Multiple `submission-N` files for one problem are successive attempts at that problem.
+Files are grouped by topic folder, then problem slug. Multiple `submission-N` files for one problem are successive attempts.
+
+**Convention:** when a problem is solved with more than one *approach*, each approach gets its own named subfolder (`bucket-sort/`, `heap/`, …) instead of sitting flat as `submission-0/1`. Every file's header block names the method and cross-references the alternative, so the trade-off is obvious on revisit.
 
 ---
 
 ## 🏷️ Topics covered
 
-- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams
+- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements
 - **Two Pointers** — Valid Palindrome
 - **Sliding Window** — Best Time to Buy and Sell
+- **Heap / Priority Queue** — Top K Frequent Elements *(alt. approach)*
+- **Bucket Sort** — Top K Frequent Elements *(optimal approach)*
 
 ---
 
