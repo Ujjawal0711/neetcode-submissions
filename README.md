@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-7-brightgreen)
+![Solved](https://img.shields.io/badge/Solved-9-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -24,10 +24,15 @@ Solutions are auto-synced from NeetCode via GitHub Sync and then annotated by ha
 | 6 | Best Time to Buy/Sell | 🟢 Easy | Sliding Window | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto/submission-0.py) |
 | 7 | Top K Frequent Elements | 🟡 Medium | Arrays & Hashing | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/bucket-sort/submission-1.py) |
 | 7 | ↳ *same problem, 2nd way* | 🟡 Medium | Heap | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/heap/submission-0.py) |
+| 8 | Product of Array Except Self | 🟡 Medium | Prefix Sum | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
+| 8 | ↳ *same problem, 2nd way* | 🟡 Medium | Brute Force | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/brute-force/submission-1.py) |
+| 9 | Valid Sudoku | 🟡 Medium | Arrays & Hashing | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/valid-sudoku/submission-0.py) |
 
-*🟢 Easy · 5   🟡 Medium · 2   🔴 Hard · 0*
+<sub>\* Board is always 9×9, so the work is constant by definition.</sub>
 
-*Solved so far: **7** (8 solutions across 2 approaches)*
+*🟢 Easy · 5   🟡 Medium · 4   🔴 Hard · 0*
+
+*Solved so far: **9** (11 solutions — 2 problems solved 2 ways)*
 
 *Language: **Python** 🐍*
 
@@ -41,11 +46,17 @@ neetcode-submissions/
     ├── <problem-id>/
     │   └── submission-N.py         ← N = attempt number (0 = first)
     │
-    └── top-k-elements-in-list/     ← solved 2 ways -> one subfolder per method
-        ├── bucket-sort/
-        │   └── submission-1.py     ← ⭐ optimal O(n)
-        └── heap/
-            └── submission-0.py     ← O(n log k)
+    ├── top-k-elements-in-list/     ← solved 2 ways -> one subfolder per method
+    │   ├── bucket-sort/
+    │   │   └── submission-1.py     ← ⭐ optimal O(n)
+    │   └── heap/
+    │       └── submission-0.py     ← O(n log k)
+    │
+    └── products-of-array-discluding-self/
+        ├── prefix-suffix/
+        │   └── submission-0.py     ← ⭐ optimal O(n)
+        └── brute-force/
+            └── submission-1.py     ← O(n²), kept for contrast
 ```
 
 Files are grouped by topic folder, then problem slug. Multiple `submission-N` files for one problem are successive attempts.
@@ -56,9 +67,10 @@ Files are grouped by topic folder, then problem slug. Multiple `submission-N` fi
 
 ## 🏷️ Topics covered
 
-- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements
+- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements, Valid Sudoku
 - **Two Pointers** — Valid Palindrome
 - **Sliding Window** — Best Time to Buy and Sell
+- **Prefix Sum** — Product of Array Except Self *(optimal approach)*
 - **Heap / Priority Queue** — Top K Frequent Elements *(alt. approach)*
 - **Bucket Sort** — Top K Frequent Elements *(optimal approach)*
 
