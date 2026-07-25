@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-9-brightgreen)
+![Solved](https://img.shields.io/badge/Solved-12-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -8,7 +8,7 @@
 
 My worked solutions to [NeetCode.io](https://neetcode.io) / LeetCode-style problems, kept as a personal DSA study log. Every file has a comment header explaining the **problem, the approach, and the time/space complexity**, plus inline notes on the tricky parts — so future-me can re-read a solution and instantly remember *why* it works.
 
-Solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand.
+Most solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand; a few are added manually.
 
 ---
 
@@ -27,12 +27,15 @@ Solutions are auto-synced from NeetCode via GitHub Sync and then annotated by ha
 | 8 | Product of Array Except Self | 🟡 Medium | Prefix Sum | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
 | 8 | ↳ *same problem, 2nd way* | 🟡 Medium | Brute Force | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/brute-force/submission-1.py) |
 | 9 | Valid Sudoku | 🟡 Medium | Arrays & Hashing | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/valid-sudoku/submission-0.py) |
+| 10 | Encode and Decode Strings | 🟡 Medium | Strings | Length-prefix `len#str` framing | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/string-encode-and-decode/submission-2.py) |
+| 11 | Longest Consecutive Sequence | 🟡 Medium | Arrays & Hashing | Hashset, expand only from starts | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/longest-consecutive-sequence/submission-0.py) |
+| 12 | Max Product of Two Digits | 🟢 Easy | Math / Sorting | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/max-product-of-two-digits/submission-0.py) |
 
-<sub>\* Board is always 9×9, so the work is constant by definition.</sub>
+<sub>\* Board is always 9×9, so the work is constant by definition.<br>† d = digit count (≤ 10), so effectively O(1).</sub>
 
-*🟢 Easy · 5   🟡 Medium · 4   🔴 Hard · 0*
+*🟢 Easy · 6   🟡 Medium · 6   🔴 Hard · 0*
 
-*Solved so far: **9** (11 solutions — 2 problems solved 2 ways)*
+*Solved so far: **12** (14 solutions — 2 problems solved 2 ways)*
 
 *Language: **Python** 🐍*
 
@@ -67,12 +70,14 @@ Files are grouped by topic folder, then problem slug. Multiple `submission-N` fi
 
 ## 🏷️ Topics covered
 
-- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements, Valid Sudoku
+- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements, Valid Sudoku, Longest Consecutive Sequence
+- **Strings** — Encode and Decode Strings
 - **Two Pointers** — Valid Palindrome
 - **Sliding Window** — Best Time to Buy and Sell
 - **Prefix Sum** — Product of Array Except Self *(optimal approach)*
 - **Heap / Priority Queue** — Top K Frequent Elements *(alt. approach)*
 - **Bucket Sort** — Top K Frequent Elements *(optimal approach)*
+- **Math / Sorting** — Max Product of Two Digits
 
 ---
 
