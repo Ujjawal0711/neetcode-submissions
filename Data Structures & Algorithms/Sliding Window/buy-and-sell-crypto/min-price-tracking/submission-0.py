@@ -1,4 +1,4 @@
-# Best Time to Buy and Sell (Buy and Sell Crypto)
+# Best Time to Buy and Sell — Method 1: Min-Price Tracking (greedy)
 # -----------------------------------------------------------------------------
 # Problem: Given daily prices, find the max profit from buying once and selling
 #          once on a LATER day. If no profit is possible, return 0.
@@ -9,6 +9,10 @@
 #
 # Time:  O(n)   one pass over prices
 # Space: O(1)   only two scalars tracked
+#
+# Trade-off: see ../sliding-window/ for the two-pointer formulation. Same O(n)
+#            and the same underlying logic — this one just states it as a
+#            running minimum instead of an explicit window.
 # -----------------------------------------------------------------------------
 class Solution:
     def maxProfit(self, prices: list[int]) -> int:

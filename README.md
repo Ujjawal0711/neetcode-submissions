@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-12-brightgreen)
+![Solved](https://img.shields.io/badge/Solved-15-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -8,76 +8,94 @@
 
 My worked solutions to [NeetCode.io](https://neetcode.io) / LeetCode-style problems, kept as a personal DSA study log. Every file has a comment header explaining the **problem, the approach, and the time/space complexity**, plus inline notes on the tricky parts — so future-me can re-read a solution and instantly remember *why* it works.
 
-Most solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand; a few are added manually.
+Problems are filed into their **NeetCode roadmap topic**. Most solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand; a few are added manually.
 
 ---
 
 ## 📊 Progress
 
-| # | Problem | Difficulty | Topic | Approach | Time | Space | Solution |
-|---|---------|:---:|-------|----------|------|-------|----------|
-| 1 | Two Sum | 🟢 Easy | Arrays & Hashing | One-pass hashmap of complements | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/two-integer-sum/submission-0.py) |
-| 2 | Contains Duplicate | 🟢 Easy | Arrays & Hashing | Set of seen values | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/duplicate-integer/submission-2.py) |
-| 3 | Valid Anagram | 🟢 Easy | Arrays & Hashing | Single tally dict (+s / −t) | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/is-anagram/submission-0.py) |
-| 4 | Group Anagrams | 🟡 Medium | Arrays & Hashing | 26-slot count tuple as key | O(n·k) | O(n·k) | [link](Data%20Structures%20%26%20Algorithms/anagram-groups/submission-0.py) |
-| 5 | Valid Palindrome | 🟢 Easy | Two Pointers | Two pointers, skip non-alnum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/is-palindrome/submission-0.py) |
-| 6 | Best Time to Buy/Sell | 🟢 Easy | Sliding Window | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto/submission-0.py) |
-| 7 | Top K Frequent Elements | 🟡 Medium | Arrays & Hashing | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/bucket-sort/submission-1.py) |
-| 7 | ↳ *same problem, 2nd way* | 🟡 Medium | Heap | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/heap/submission-0.py) |
-| 8 | Product of Array Except Self | 🟡 Medium | Prefix Sum | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
-| 8 | ↳ *same problem, 2nd way* | 🟡 Medium | Brute Force | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/brute-force/submission-1.py) |
-| 9 | Valid Sudoku | 🟡 Medium | Arrays & Hashing | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/valid-sudoku/submission-0.py) |
-| 10 | Encode and Decode Strings | 🟡 Medium | Strings | Length-prefix `len#str` framing | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/string-encode-and-decode/submission-2.py) |
-| 11 | Longest Consecutive Sequence | 🟡 Medium | Arrays & Hashing | Hashset, expand only from starts | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/longest-consecutive-sequence/submission-0.py) |
-| 12 | Max Product of Two Digits | 🟢 Easy | Math / Sorting | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/max-product-of-two-digits/submission-0.py) |
+**15 problems · 18 solutions** — 🟢 Easy · 6   🟡 Medium · 9   🔴 Hard · 0
+
+### 🗃️ Arrays & Hashing — 9
+
+| Problem | Difficulty | Approach | Time | Space | Solution |
+|---------|:---:|----------|------|-------|----------|
+| Two Sum | 🟢 Easy | One-pass hashmap of complements | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/two-integer-sum/submission-0.py) |
+| Contains Duplicate | 🟢 Easy | Set of seen values | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/duplicate-integer/submission-2.py) |
+| Valid Anagram | 🟢 Easy | Single tally dict (+s / −t) | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/is-anagram/submission-0.py) |
+| Group Anagrams | 🟡 Medium | 26-slot count tuple as key | O(n·k) | O(n·k) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/anagram-groups/submission-0.py) |
+| Top K Frequent Elements | 🟡 Medium | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/bucket-sort/submission-1.py) |
+| ↳ *2nd way* | 🟡 Medium | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/heap/submission-0.py) |
+| Encode and Decode Strings | 🟡 Medium | Length-prefix `len#str` framing | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/string-encode-and-decode/submission-2.py) |
+| Product of Array Except Self | 🟡 Medium | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
+| ↳ *2nd way* | 🟡 Medium | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/brute-force/submission-1.py) |
+| Valid Sudoku | 🟡 Medium | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/valid-sudoku/submission-0.py) |
+| Longest Consecutive Sequence | 🟡 Medium | Hashset, expand only from starts | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/longest-consecutive-sequence/submission-0.py) |
+
+### 👉👈 Two Pointers — 4
+
+| Problem | Difficulty | Approach | Time | Space | Solution |
+|---------|:---:|----------|------|-------|----------|
+| Valid Palindrome | 🟢 Easy | Two pointers, skip non-alnum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/is-palindrome/submission-0.py) |
+| Two Sum II (sorted) | 🟡 Medium | Converge pointers to steer the sum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/two-integer-sum-ii/submission-0.py) |
+| 3Sum | 🟡 Medium | Sort, fix one, Two Sum II the rest | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/three-integer-sum/submission-1.py) |
+| Container With Most Water | 🟡 Medium | Move the shorter side inward | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/max-water-container/submission-0.py) |
+
+### 🪟 Sliding Window — 1
+
+| Problem | Difficulty | Approach | Time | Space | Solution |
+|---------|:---:|----------|------|-------|----------|
+| Best Time to Buy & Sell | 🟢 Easy | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/min-price-tracking/submission-0.py) |
+| ↳ *2nd way* | 🟢 Easy | Two-pointer window, reset on new low | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/sliding-window/submission-1.py) |
+
+### 📐 Math & Geometry — 1
+
+| Problem | Difficulty | Approach | Time | Space | Solution |
+|---------|:---:|----------|------|-------|----------|
+| Max Product of Two Digits | 🟢 Easy | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/Math%20%26%20Geometry/max-product-of-two-digits/submission-0.py) |
 
 <sub>\* Board is always 9×9, so the work is constant by definition.<br>† d = digit count (≤ 10), so effectively O(1).</sub>
 
-*🟢 Easy · 6   🟡 Medium · 6   🔴 Hard · 0*
+---
 
-*Solved so far: **12** (14 solutions — 2 problems solved 2 ways)*
+## 🗺️ Roadmap coverage
 
-*Language: **Python** 🐍*
+| Topic | Done | | Topic | Done |
+|---|:---:|---|---|:---:|
+| Arrays & Hashing | **9** | | Backtracking | — |
+| Two Pointers | **4** | | Graphs | — |
+| Sliding Window | **1** | | Advanced Graphs | — |
+| Stack | — | | 1-D DP | — |
+| Binary Search | — | | 2-D DP | — |
+| Linked List | — | | Greedy | — |
+| Trees | — | | Intervals | — |
+| Tries | — | | Math & Geometry | **1** |
+| Heap / Priority Queue | — | | Bit Manipulation | — |
 
 ---
 
 ## 🗂️ Repository structure
 
 ```
-neetcode-submissions/
-└── Data Structures & Algorithms/
-    ├── <problem-id>/
-    │   └── submission-N.py         ← N = attempt number (0 = first)
-    │
-    ├── top-k-elements-in-list/     ← solved 2 ways -> one subfolder per method
-    │   ├── bucket-sort/
-    │   │   └── submission-1.py     ← ⭐ optimal O(n)
-    │   └── heap/
-    │       └── submission-0.py     ← O(n log k)
-    │
-    └── products-of-array-discluding-self/
-        ├── prefix-suffix/
-        │   └── submission-0.py     ← ⭐ optimal O(n)
-        └── brute-force/
-            └── submission-1.py     ← O(n²), kept for contrast
+Data Structures & Algorithms/
+├── Arrays & Hashing/
+│   ├── two-integer-sum/
+│   │   └── submission-0.py              ← N = attempt number (0 = first)
+│   ├── top-k-elements-in-list/          ← solved 2 ways -> subfolder per method
+│   │   ├── bucket-sort/                 ← ⭐ optimal O(n)
+│   │   └── heap/                        ← O(n log k)
+│   └── ...
+├── Two Pointers/
+├── Sliding Window/
+│   └── buy-and-sell-crypto/
+│       ├── min-price-tracking/
+│       └── sliding-window/
+└── Math & Geometry/
 ```
 
-Files are grouped by topic folder, then problem slug. Multiple `submission-N` files for one problem are successive attempts.
+Problems are filed by **NeetCode roadmap topic**, then problem slug. Multiple `submission-N` files for one problem are successive attempts.
 
-**Convention:** when a problem is solved with more than one *approach*, each approach gets its own named subfolder (`bucket-sort/`, `heap/`, …) instead of sitting flat as `submission-0/1`. Every file's header block names the method and cross-references the alternative, so the trade-off is obvious on revisit.
-
----
-
-## 🏷️ Topics covered
-
-- **Arrays & Hashing** — Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams, Top K Frequent Elements, Valid Sudoku, Longest Consecutive Sequence
-- **Strings** — Encode and Decode Strings
-- **Two Pointers** — Valid Palindrome
-- **Sliding Window** — Best Time to Buy and Sell
-- **Prefix Sum** — Product of Array Except Self *(optimal approach)*
-- **Heap / Priority Queue** — Top K Frequent Elements *(alt. approach)*
-- **Bucket Sort** — Top K Frequent Elements *(optimal approach)*
-- **Math / Sorting** — Max Product of Two Digits
+**Convention:** when a problem is solved with more than one *approach*, each approach gets its own named subfolder (`bucket-sort/`, `heap/`, …) instead of sitting flat as `submission-0/1`. Every file's header names the method and cross-references the alternative, so the trade-off is obvious on revisit.
 
 ---
 
@@ -96,7 +114,7 @@ print(sol.twoSum([2, 7, 11, 15], 9))   # -> [0, 1]
 
 This repo is populated by NeetCode's **GitHub Sync** — submissions on [neetcode.io](https://neetcode.io) auto-commit here. Settings live at [neetcode.io/profile/github](https://neetcode.io/profile/github) (auto-commit toggle, accepted-only filter, bulk sync).
 
-> ⚠️ **Heads-up:** NeetCode auto-generates a `README.md` on sync. If auto-commit stays on, a future sync may overwrite this custom README. To keep it, either turn off auto-commit or re-apply this file after syncs.
+> ⚠️ **Heads-up:** sync writes to the *flat* path `Data Structures & Algorithms/<problem-slug>/`, so newly synced problems land at the top level and need moving into their topic folder. It also regenerates `README.md`, which would overwrite this one if auto-commit is left on.
 
 ---
 
