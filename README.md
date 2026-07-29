@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-17-brightgreen)
+![NeetCode 150](https://img.shields.io/badge/NeetCode%20150-16%20%2F%20150-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -8,13 +8,13 @@
 
 My worked solutions to [NeetCode.io](https://neetcode.io) / LeetCode-style problems, kept as a personal DSA study log. Every file has a comment header explaining the **problem, the approach, and the time/space complexity**, plus inline notes on the tricky parts — so future-me can re-read a solution and instantly remember *why* it works.
 
-Problems are filed into their **NeetCode roadmap topic**. Most solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand; a few are added manually.
+Problems are filed into their **NeetCode 150 topic**, using NeetCode's own names and groupings. Most solutions are auto-synced from NeetCode via GitHub Sync and then annotated by hand; a few are added manually.
 
 ---
 
 ## 📊 Progress
 
-**17 problems · 20 solutions** — 🟢 Easy · 6   🟡 Medium · 11   🔴 Hard · 0
+**16 / 150 NeetCode problems** (+1 extra) · **20 solutions** — 🟢 Easy · 6   🟡 Medium · 11   🔴 Hard · 0
 
 ### 🗃️ Arrays & Hashing — 9
 
@@ -50,11 +50,13 @@ Problems are filed into their **NeetCode roadmap topic**. Most solutions are aut
 | Longest Substring Without Repeating | 🟡 Medium | Window + set, shrink past duplicate | O(n) | O(min(n,m)) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-substring-without-duplicates/submission-2.py) |
 | Longest Repeating Char Replacement | 🟡 Medium | Window valid while `len - maxfreq ≤ k` | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-repeating-substring-with-replacement/submission-2.py) |
 
-### 📐 Math & Geometry — 1
+### ➕ Extras — 1
+
+<sub>Problems outside the NeetCode 150 list.</sub>
 
 | Problem | Difficulty | Approach | Time | Space | Solution |
 |---------|:---:|----------|------|-------|----------|
-| Max Product of Two Digits | 🟢 Easy | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/Math%20%26%20Geometry/max-product-of-two-digits/submission-0.py) |
+| Max Product of Two Digits | 🟢 Easy | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/Extras/max-product-of-two-digits/submission-0.py) |
 
 <sub>\* Board is always 9×9, so the work is constant by definition.<br>† d = digit count (≤ 10), so effectively O(1).</sub>
 
@@ -62,17 +64,21 @@ Problems are filed into their **NeetCode roadmap topic**. Most solutions are aut
 
 ## 🗺️ Roadmap coverage
 
+The 18 topics of the [NeetCode 150](https://neetcode.io/practice) roadmap, in roadmap order:
+
 | Topic | Done | | Topic | Done |
 |---|:---:|---|---|:---:|
-| Arrays & Hashing | **9** | | Backtracking | — |
-| Two Pointers | **4** | | Graphs | — |
-| Sliding Window | **3** | | Advanced Graphs | — |
-| Stack | — | | 1-D DP | — |
-| Binary Search | — | | 2-D DP | — |
-| Linked List | — | | Greedy | — |
-| Trees | — | | Intervals | — |
-| Tries | — | | Math & Geometry | **1** |
-| Heap / Priority Queue | — | | Bit Manipulation | — |
+| Arrays & Hashing | **9 / 9** ✅ | | Backtracking | 0 / 9 |
+| Two Pointers | **4 / 5** | | Graphs | 0 / 13 |
+| Sliding Window | **3 / 6** | | Advanced Graphs | 0 / 6 |
+| Stack | 0 / 7 | | 1-D Dynamic Programming | 0 / 12 |
+| Binary Search | 0 / 7 | | 2-D Dynamic Programming | 0 / 11 |
+| Linked List | 0 / 11 | | Greedy | 0 / 8 |
+| Trees | 0 / 15 | | Intervals | 0 / 6 |
+| Tries | 0 / 3 | | Math & Geometry | 0 / 8 |
+| Heap / Priority Queue | 0 / 7 | | Bit Manipulation | 0 / 7 |
+
+**Arrays & Hashing is complete** — all 9 done. Next in Two Pointers: Trapping Rain Water.
 
 ---
 
@@ -92,10 +98,12 @@ Data Structures & Algorithms/
 │   └── buy-and-sell-crypto/
 │       ├── min-price-tracking/
 │       └── sliding-window/
-└── Math & Geometry/
+└── Extras/                              ← problems not in the NeetCode 150
 ```
 
-Problems are filed by **NeetCode roadmap topic**, then problem slug. Multiple `submission-N` files for one problem are successive attempts.
+Topic folders use the **exact NeetCode 150 topic names and groupings** — a problem sits in the same section NeetCode files it under, nothing re-categorized by hand. Anything outside the 150 goes in `Extras/`.
+
+Within a topic it's problem slug, then the solution. Multiple `submission-N` files for one problem are successive attempts.
 
 **Convention:** when a problem is solved with more than one *approach*, each approach gets its own named subfolder (`bucket-sort/`, `heap/`, …) instead of sitting flat as `submission-0/1`. Every file's header names the method and cross-references the alternative, so the trade-off is obvious on revisit.
 
