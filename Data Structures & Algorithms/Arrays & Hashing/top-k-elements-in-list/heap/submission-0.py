@@ -1,4 +1,4 @@
-# Top K Frequent Elements — Method 1: Min-Heap
+# LC 347 · Top K Frequent Elements — Method 1: Min-Heap
 # -----------------------------------------------------------------------------
 # Problem: Given nums and an integer k, return the k most frequent elements.
 #

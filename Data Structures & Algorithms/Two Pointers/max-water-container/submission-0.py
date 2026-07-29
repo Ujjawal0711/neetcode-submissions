@@ -1,4 +1,4 @@
-# Container With Most Water
+# LC 11 · Container With Most Water
 # -----------------------------------------------------------------------------
 # Problem: Each element is a vertical line's height. Pick two lines that, with
 #          the x-axis, hold the most water. Area = width × the SHORTER of the

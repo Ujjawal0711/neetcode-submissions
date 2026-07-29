@@ -1,4 +1,4 @@
-# Best Time to Buy and Sell — Method 1: Min-Price Tracking (greedy)
+# LC 121 · Best Time to Buy and Sell — Method 1: Min-Price Tracking (greedy)
 # -----------------------------------------------------------------------------
 # Problem: Given daily prices, find the max profit from buying once and selling
 #          once on a LATER day. If no profit is possible, return 0.

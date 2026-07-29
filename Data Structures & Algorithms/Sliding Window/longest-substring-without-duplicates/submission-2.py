@@ -1,4 +1,4 @@
-# Longest Substring Without Repeating Characters
+# LC 3 · Longest Substring Without Repeating Characters
 # -----------------------------------------------------------------------------
 # Problem: Return the length of the longest substring of s containing no
 #          repeated characters. Substring = contiguous, unlike a subsequence.

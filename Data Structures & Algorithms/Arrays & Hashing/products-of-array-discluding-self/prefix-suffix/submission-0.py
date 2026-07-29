@@ -1,4 +1,4 @@
-# Product of Array Except Self — Method 1: Prefix & Suffix Products  ⭐ optimal
+# LC 238 · Product of Array Except Self — Method 1: Prefix & Suffix Products  ⭐ optimal
 # -----------------------------------------------------------------------------
 # Problem: Return an array where answer[i] = product of all elements EXCEPT
 #          nums[i]. Must run in O(n) and without using division.

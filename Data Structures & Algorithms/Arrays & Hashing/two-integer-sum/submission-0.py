@@ -1,4 +1,4 @@
-# Two Sum (Two Integer Sum)
+# LC 1 · Two Sum (Two Integer Sum)
 # -----------------------------------------------------------------------------
 # Problem: Given nums and a target, return the indices of the two numbers that
 #          add up to target. Exactly one valid answer is assumed.

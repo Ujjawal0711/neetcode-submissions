@@ -18,45 +18,45 @@ Problems are filed into their **NeetCode 150 topic**, using NeetCode's own names
 
 ### 🗃️ Arrays & Hashing — 9
 
-| Problem | Difficulty | Approach | Time | Space | Solution |
-|---------|:---:|----------|------|-------|----------|
-| Two Sum | 🟢 Easy | One-pass hashmap of complements | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/two-integer-sum/submission-0.py) |
-| Contains Duplicate | 🟢 Easy | Set of seen values | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/duplicate-integer/submission-2.py) |
-| Valid Anagram | 🟢 Easy | Single tally dict (+s / −t) | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/is-anagram/submission-0.py) |
-| Group Anagrams | 🟡 Medium | 26-slot count tuple as key | O(n·k) | O(n·k) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/anagram-groups/submission-0.py) |
-| Top K Frequent Elements | 🟡 Medium | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/bucket-sort/submission-1.py) |
-| ↳ *2nd way* | 🟡 Medium | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/heap/submission-0.py) |
-| Encode and Decode Strings | 🟡 Medium | Length-prefix `len#str` framing | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/string-encode-and-decode/submission-2.py) |
-| Product of Array Except Self | 🟡 Medium | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
-| ↳ *2nd way* | 🟡 Medium | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/brute-force/submission-1.py) |
-| Valid Sudoku | 🟡 Medium | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/valid-sudoku/submission-0.py) |
-| Longest Consecutive Sequence | 🟡 Medium | Hashset, expand only from starts | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/longest-consecutive-sequence/submission-0.py) |
+| LC | Problem | Difficulty | Approach | Time | Space | Solution |
+|:---:|---------|:---:|----------|------|-------|----------|
+| 1 | Two Sum | 🟢 Easy | One-pass hashmap of complements | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/two-integer-sum/submission-0.py) |
+| 217 | Contains Duplicate | 🟢 Easy | Set of seen values | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/duplicate-integer/submission-2.py) |
+| 242 | Valid Anagram | 🟢 Easy | Single tally dict (+s / −t) | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/is-anagram/submission-0.py) |
+| 49 | Group Anagrams | 🟡 Medium | 26-slot count tuple as key | O(n·k) | O(n·k) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/anagram-groups/submission-0.py) |
+| 347 | Top K Frequent Elements | 🟡 Medium | ⭐ Bucket sort (freq as index) | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/bucket-sort/submission-1.py) |
+| | ↳ *2nd way* | 🟡 Medium | Min-heap capped at size k | O(n log k) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/top-k-elements-in-list/heap/submission-0.py) |
+| 271 | Encode and Decode Strings | 🟡 Medium | Length-prefix `len#str` framing | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/string-encode-and-decode/submission-2.py) |
+| 238 | Product of Array Except Self | 🟡 Medium | ⭐ Prefix × suffix products | **O(n)** | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/prefix-suffix/submission-0.py) |
+| | ↳ *2nd way* | 🟡 Medium | Re-scan array for each index | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/products-of-array-discluding-self/brute-force/submission-1.py) |
+| 36 | Valid Sudoku | 🟡 Medium | 27 sets: rows, cols, 3×3 boxes | O(1)\* | O(1)\* | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/valid-sudoku/submission-0.py) |
+| 128 | Longest Consecutive Sequence | 🟡 Medium | Hashset, expand only from starts | O(n) | O(n) | [link](Data%20Structures%20%26%20Algorithms/Arrays%20%26%20Hashing/longest-consecutive-sequence/submission-0.py) |
 
 ### 👉👈 Two Pointers — 4
 
-| Problem | Difficulty | Approach | Time | Space | Solution |
-|---------|:---:|----------|------|-------|----------|
-| Valid Palindrome | 🟢 Easy | Two pointers, skip non-alnum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/is-palindrome/submission-0.py) |
-| Two Sum II (sorted) | 🟡 Medium | Converge pointers to steer the sum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/two-integer-sum-ii/submission-0.py) |
-| 3Sum | 🟡 Medium | Sort, fix one, Two Sum II the rest | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/three-integer-sum/submission-1.py) |
-| Container With Most Water | 🟡 Medium | Move the shorter side inward | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/max-water-container/submission-0.py) |
+| LC | Problem | Difficulty | Approach | Time | Space | Solution |
+|:---:|---------|:---:|----------|------|-------|----------|
+| 125 | Valid Palindrome | 🟢 Easy | Two pointers, skip non-alnum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/is-palindrome/submission-0.py) |
+| 167 | Two Sum II (sorted) | 🟡 Medium | Converge pointers to steer the sum | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/two-integer-sum-ii/submission-0.py) |
+| 15 | 3Sum | 🟡 Medium | Sort, fix one, Two Sum II the rest | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/three-integer-sum/submission-1.py) |
+| 11 | Container With Most Water | 🟡 Medium | Move the shorter side inward | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/max-water-container/submission-0.py) |
 
 ### 🪟 Sliding Window — 3
 
-| Problem | Difficulty | Approach | Time | Space | Solution |
-|---------|:---:|----------|------|-------|----------|
-| Best Time to Buy & Sell | 🟢 Easy | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/min-price-tracking/submission-0.py) |
-| ↳ *2nd way* | 🟢 Easy | Two-pointer window, reset on new low | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/sliding-window/submission-1.py) |
-| Longest Substring Without Repeating | 🟡 Medium | Window + set, shrink past duplicate | O(n) | O(min(n,m)) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-substring-without-duplicates/submission-2.py) |
-| Longest Repeating Char Replacement | 🟡 Medium | Window valid while `len - maxfreq ≤ k` | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-repeating-substring-with-replacement/submission-2.py) |
+| LC | Problem | Difficulty | Approach | Time | Space | Solution |
+|:---:|---------|:---:|----------|------|-------|----------|
+| 121 | Best Time to Buy & Sell | 🟢 Easy | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/min-price-tracking/submission-0.py) |
+| | ↳ *2nd way* | 🟢 Easy | Two-pointer window, reset on new low | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/sliding-window/submission-1.py) |
+| 3 | Longest Substring Without Repeating | 🟡 Medium | Window + set, shrink past duplicate | O(n) | O(min(n,m)) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-substring-without-duplicates/submission-2.py) |
+| 424 | Longest Repeating Char Replacement | 🟡 Medium | Window valid while `len - maxfreq ≤ k` | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-repeating-substring-with-replacement/submission-2.py) |
 
 ### ➕ Extras — 1
 
 <sub>Problems outside the NeetCode 150 list.</sub>
 
-| Problem | Difficulty | Approach | Time | Space | Solution |
-|---------|:---:|----------|------|-------|----------|
-| Max Product of Two Digits | 🟢 Easy | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/Extras/max-product-of-two-digits/submission-0.py) |
+| LC | Problem | Difficulty | Approach | Time | Space | Solution |
+|:---:|---------|:---:|----------|------|-------|----------|
+| — | Max Product of Two Digits | 🟢 Easy | Sort digits, take top two | O(d log d)† | O(d) | [link](Data%20Structures%20%26%20Algorithms/Extras/max-product-of-two-digits/submission-0.py) |
 
 <sub>\* Board is always 9×9, so the work is constant by definition.<br>† d = digit count (≤ 10), so effectively O(1).</sub>
 

@@ -1,4 +1,4 @@
-# Group Anagrams
+# LC 49 · Group Anagrams
 # -----------------------------------------------------------------------------
 # Problem: Given a list of strings, group the ones that are anagrams of each
 #          other (same letters, any order).

@@ -1,4 +1,4 @@
-# Two Sum II — Input Array Is Sorted
+# LC 167 · Two Sum II — Input Array Is Sorted
 # -----------------------------------------------------------------------------
 # Problem: Given a 1-INDEXED array sorted in ascending order, return the indices
 #          of the two numbers adding up to target. Must use O(1) extra space

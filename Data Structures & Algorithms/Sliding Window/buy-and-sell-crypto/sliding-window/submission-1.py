@@ -1,4 +1,4 @@
-# Best Time to Buy and Sell — Method 2: Sliding Window (two pointers)
+# LC 121 · Best Time to Buy and Sell — Method 2: Sliding Window (two pointers)
 # -----------------------------------------------------------------------------
 # Problem: Given daily prices, find the max profit from buying once and selling
 #          once on a LATER day. If no profit is possible, return 0.

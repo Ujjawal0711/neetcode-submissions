@@ -1,4 +1,4 @@
-# Valid Palindrome
+# LC 125 · Valid Palindrome
 # -----------------------------------------------------------------------------
 # Problem: Return True if s reads the same forwards and backwards, considering
 #          only alphanumeric characters and ignoring case.

@@ -1,4 +1,4 @@
-# Valid Sudoku
+# LC 36 · Valid Sudoku
 # -----------------------------------------------------------------------------
 # Problem: Given a 9x9 board (digits '1'-'9' or '.' for empty), decide whether
 #          the CURRENT filled cells are valid — no repeated digit within any

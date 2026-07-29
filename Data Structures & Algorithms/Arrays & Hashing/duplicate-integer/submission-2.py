@@ -1,4 +1,4 @@
-# Contains Duplicate (Duplicate Integer)
+# LC 217 · Contains Duplicate (Duplicate Integer)
 # -----------------------------------------------------------------------------
 # Problem: Return True if any value appears at least twice in nums, else False.
 #

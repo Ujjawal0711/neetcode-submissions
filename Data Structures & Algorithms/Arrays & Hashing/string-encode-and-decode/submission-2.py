@@ -1,4 +1,4 @@
-# Encode and Decode Strings
+# LC 271 · Encode and Decode Strings
 # -----------------------------------------------------------------------------
 # Problem: Design encode(list[str]) -> str and decode(str) -> list[str] so that
 #          any list of strings survives the round trip. Strings may contain ANY

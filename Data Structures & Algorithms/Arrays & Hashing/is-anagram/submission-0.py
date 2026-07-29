@@ -1,4 +1,4 @@
-# Valid Anagram
+# LC 242 · Valid Anagram
 # -----------------------------------------------------------------------------
 # Problem: Return True if t is an anagram of s (same characters, same counts).
 #

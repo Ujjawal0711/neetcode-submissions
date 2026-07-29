@@ -1,4 +1,4 @@
-# Top K Frequent Elements — Method 2: Bucket Sort  ⭐ most optimized
+# LC 347 · Top K Frequent Elements — Method 2: Bucket Sort  ⭐ most optimized
 # -----------------------------------------------------------------------------
 # Problem: Given nums and an integer k, return the k most frequent elements.
 #

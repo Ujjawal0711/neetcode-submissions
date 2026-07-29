@@ -1,4 +1,4 @@
-# 3Sum
+# LC 15 · 3Sum
 # -----------------------------------------------------------------------------
 # Problem: Find all UNIQUE triplets [a,b,c] in nums where a + b + c == 0. The
 #          result must not contain duplicate triplets.

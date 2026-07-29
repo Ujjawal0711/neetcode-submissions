@@ -1,4 +1,4 @@
-# Longest Consecutive Sequence
+# LC 128 · Longest Consecutive Sequence
 # -----------------------------------------------------------------------------
 # Problem: Given an unsorted array, return the length of the longest run of
 #          consecutive integers (e.g. [100,4,200,1,3,2] -> 4, for 1,2,3,4).

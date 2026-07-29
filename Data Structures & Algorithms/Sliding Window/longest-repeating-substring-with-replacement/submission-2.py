@@ -1,4 +1,4 @@
-# Longest Repeating Character Replacement
+# LC 424 · Longest Repeating Character Replacement
 # -----------------------------------------------------------------------------
 # Problem: Given a string s and integer k, you may replace up to k characters
 #          with any other character. Return the length of the longest substring

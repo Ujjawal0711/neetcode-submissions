@@ -1,4 +1,4 @@
-# Product of Array Except Self — Method 2: Brute Force  ❌ too slow for the limits
+# LC 238 · Product of Array Except Self — Method 2: Brute Force  ❌ too slow for the limits
 # -----------------------------------------------------------------------------
 # Problem: Return an array where answer[i] = product of all elements EXCEPT
 #          nums[i]. Must run in O(n) and without using division.

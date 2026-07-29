@@ -1,4 +1,4 @@
-# Max Product of Two Digits
+# Max Product of Two Digits  (no LeetCode equivalent)
 # -----------------------------------------------------------------------------
 # Problem: Given an integer n, return the largest product obtainable from any
 #          two of its digits.
