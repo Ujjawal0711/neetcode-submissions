@@ -1,3 +1,23 @@
+# Longest Repeating Character Replacement
+# -----------------------------------------------------------------------------
+# Problem: Given a string s and integer k, you may replace up to k characters
+#          with any other character. Return the length of the longest substring
+#          made of a single repeated character that you can produce.
+#
+# Idea:    Sliding window over s, keeping a live frequency tally of the window.
+#          A window is VALID if the characters that aren't the majority one can
+#          all be covered by the k replacements — i.e.
+#              window_length - maxfreq <= k
+#          Expand with `right`; whenever that condition breaks, shrink from the
+#          left until it holds again. The largest valid window is the answer.
+#
+# Time:  O(n)   each char enters and leaves the window at most once
+# Space: O(1)   the freq map holds at most 26 letters
+#
+# The subtle bit is that `maxfreq` is deliberately never decremented — see the
+# inline note below for why that's safe. It's the part of this problem most
+# people (reasonably) assume is a bug.
+# -----------------------------------------------------------------------------
 class Solution:
     def characterReplacement(self, s, k):
         left = 0
@@ -27,6 +47,3 @@ class Solution:
             maxseq = max(maxseq, right - left + 1)
 
         return maxseq
-
-# Time: O(n) -- each char processed/shifted at most once
-# Space: O(1) -- at most 26 letters in freq map

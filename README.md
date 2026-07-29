@@ -1,6 +1,6 @@
 # 🧩 NeetCode Solutions — Ujjawal
 
-![Solved](https://img.shields.io/badge/Solved-15-brightgreen)
+![Solved](https://img.shields.io/badge/Solved-17-brightgreen)
 ![Language](https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-NeetCode-000000)
 ![Last Updated](https://img.shields.io/badge/Updated-Jul%202026-informational)
@@ -14,7 +14,7 @@ Problems are filed into their **NeetCode roadmap topic**. Most solutions are aut
 
 ## 📊 Progress
 
-**15 problems · 18 solutions** — 🟢 Easy · 6   🟡 Medium · 9   🔴 Hard · 0
+**17 problems · 20 solutions** — 🟢 Easy · 6   🟡 Medium · 11   🔴 Hard · 0
 
 ### 🗃️ Arrays & Hashing — 9
 
@@ -41,12 +41,14 @@ Problems are filed into their **NeetCode roadmap topic**. Most solutions are aut
 | 3Sum | 🟡 Medium | Sort, fix one, Two Sum II the rest | O(n²) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/three-integer-sum/submission-1.py) |
 | Container With Most Water | 🟡 Medium | Move the shorter side inward | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Two%20Pointers/max-water-container/submission-0.py) |
 
-### 🪟 Sliding Window — 1
+### 🪟 Sliding Window — 3
 
 | Problem | Difficulty | Approach | Time | Space | Solution |
 |---------|:---:|----------|------|-------|----------|
 | Best Time to Buy & Sell | 🟢 Easy | Track min price, max profit | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/min-price-tracking/submission-0.py) |
 | ↳ *2nd way* | 🟢 Easy | Two-pointer window, reset on new low | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/buy-and-sell-crypto/sliding-window/submission-1.py) |
+| Longest Substring Without Repeating | 🟡 Medium | Window + set, shrink past duplicate | O(n) | O(min(n,m)) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-substring-without-duplicates/submission-2.py) |
+| Longest Repeating Char Replacement | 🟡 Medium | Window valid while `len - maxfreq ≤ k` | O(n) | O(1) | [link](Data%20Structures%20%26%20Algorithms/Sliding%20Window/longest-repeating-substring-with-replacement/submission-2.py) |
 
 ### 📐 Math & Geometry — 1
 
@@ -64,7 +66,7 @@ Problems are filed into their **NeetCode roadmap topic**. Most solutions are aut
 |---|:---:|---|---|:---:|
 | Arrays & Hashing | **9** | | Backtracking | — |
 | Two Pointers | **4** | | Graphs | — |
-| Sliding Window | **1** | | Advanced Graphs | — |
+| Sliding Window | **3** | | Advanced Graphs | — |
 | Stack | — | | 1-D DP | — |
 | Binary Search | — | | 2-D DP | — |
 | Linked List | — | | Greedy | — |
